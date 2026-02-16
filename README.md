@@ -136,16 +136,10 @@ mvnw test
 
 **Test Scenario**: Create cab → User1 requests → User2 requests → Auto-match → Assign cab ✅
 
-See [TEST_RESULTS.md](TEST_RESULTS.md) for details.
+See [API Documentation.md](API Documentation.md) for details.
 
 ---
 
-## 📚 Documentation
-
-- [MATCHING_ENGINE_GUIDE.md](MATCHING_ENGINE_GUIDE.md) - Detailed algorithm docs
-- [TEST_RESULTS.md](TEST_RESULTS.md) - Test execution results
-
----
 
 ## 🔐 Security
 
