@@ -1,0 +1,311 @@
+# ============================================================================
+# RidePool Airport Ride Pooling System - Git Ignore Configuration
+# ============================================================================
+
+# ============================================================================
+# IDE & Editor Configuration
+# ============================================================================
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+*.class
+.DS_Store
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.metadata
+.gradle/
+.factorypath
+*.swp
+*.swo
+*~
+.env.local
+.env.*.local
+
+# ============================================================================
+# Maven Build Output
+# ============================================================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+release.properties
+.flattened-pom.xml
+.mvn/wrapper/maven-wrapper.jar
+
+# Don't ignore target but do ignore specific contents
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ============================================================================
+# Java & Compilation
+# ============================================================================
+*.class
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.nar
+/bin/
+out/
+dist/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ============================================================================
+# Spring Boot & STS & Application Specific
+# ============================================================================
+.springBeans
+.apt_generated
+spring-shell.log
+
+# STS (Spring Tool Suite)
+.sts4-cache
+
+# ============================================================================
+# Application Properties & Configuration - MOST IMPORTANT FOR SECURITY
+# ============================================================================
+# SENSITIVE: Database credentials, API keys, connection strings
+# These should NEVER be committed to version control
+src/main/resources/application.properties
+src/main/resources/application-local.properties
+src/main/resources/application-dev.properties
+src/main/resources/application-stage.properties
+src/main/resources/application-prod.properties
+src/main/resources/application-production.properties
+
+# Environment variable files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Configuration property files
+mongodb.properties
+database.properties
+secrets.properties
+credentials.properties
+config.properties
+
+# API Keys, OAuth tokens, and sensitive config
+api-keys.properties
+oauth-config.properties
+jwt.properties
+security-config.properties
+
+# Database connection strings
+db-connection.properties
+connection-string.txt
+
+# ============================================================================
+# Node.js & Frontend (if any)
+# ============================================================================
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================================================================
+# Logs & Temporary Files
+# ============================================================================
+*.log
+*.log.*
+/logs/
+logs/
+*.out
+*.tmp
+.cache/
+.tmp/
+tmp/
+temp/
+
+# ============================================================================
+# OS-Specific Files
+# ============================================================================
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+*~
+.~*
+
+# ============================================================================
+# Database Files (if using local database)
+# ============================================================================
+*.db
+*.sqlite
+*.sqlite3
+mongodb/
+data/
+*.mongo
+
+# ============================================================================
+# Testing & Coverage Reports
+# ============================================================================
+.coverage
+htmlcov/
+.pytest_cache/
+coverage.xml
+*.cover
+jacoco.exec
+.jacoco.exec
+target/jacoco-report/
+test-reports/
+surefire-reports/
+
+# ============================================================================
+# Gradle (if using Gradle in addition to Maven)
+# ============================================================================
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+
+# ============================================================================
+# Git Related
+# ============================================================================
+.git/
+.gitconfig
+.gitignore~
+
+# ============================================================================
+# IntelliJ IDEA
+# ============================================================================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# ============================================================================
+# Eclipse Specific
+# ============================================================================
+.settings/
+.classpath
+.project
+bin/
+.externalToolBuilders
+.targets
+
+# ============================================================================
+# NetBeans Specific
+# ============================================================================
+nbproject/
+nb-configuration.xml
+.nb-gradle/
+nbbuild/
+nbdist/
+dist/
+
+# ============================================================================
+# Visual Studio Code
+# ============================================================================
+.vscode/
+.vscode-test/
+.history/
+*.vsix
+.vscode-settings.json
+
+# ============================================================================
+# Development & Debugging
+# ============================================================================
+debug/
+scratch/
+temp/
+tmp/
+.DS_Store_*
+HELP.md
+
+# ============================================================================
+# Local Development Files
+# ============================================================================
+local.properties
+dev.properties
+.env.dev
+.localrc
+.bashrc.local
+
+# ============================================================================
+# Docker Related
+# ============================================================================
+.dockerignore
+docker-compose.local.yml
+docker-compose.override.yml
+
+# ============================================================================
+# Specific to RidePool Project
+# ============================================================================
+# Sensitive MongoDB Atlas credentials - CRITICAL
+src/main/resources/application.properties.bak
+src/main/resources/application.properties.old
+src/main/resources/application.properties.backup
+
+# Local test data files
+test-data/
+mock-data/
+sample-data/
+test-rides.json
+test-cabs.json
+local-rides.json
+local-cabs.json
+
+# Development database dumps
+mongodb-dump/
+mongo-backup/
+db-backup/
+
+# Local caches
+.h2.server.properties
+
+# ============================================================================
+# Archive & Backup Files
+# ============================================================================
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.iso
+*.bak
+*.backup
+*.tmp
+*.old
+*.orig
+
+# ============================================================================
+# Documentation Artifacts (if needed)
+# ============================================================================
+.#*
+*~
+*.swp
+*.swo
+
+# ============================================================================
+# Build Artifacts that should NOT be tracked
+# ============================================================================
+.m2/
+dependency-reduced-pom.xml
+
+# ============================================================================
+# Miscellaneous
+# ============================================================================
+HELP.md
+.runtime
+.DS_Store
+Thumbs.db
+*.class
